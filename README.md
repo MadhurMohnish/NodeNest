@@ -30,19 +30,18 @@
 | **OCR** | Tesseract.js | Browser-based, no API keys |
 | **PDF Processing** | PDF.js (client-side) | Avoid server costs |
 
-## 5. Data Model (Conceptual)
-javascript
+## 5. Data Model (Conceptual)  
+```javascript
 Workflow = {
   id: string,
   tasks: [{
-    type: "CODE_GEN" | "OCR" | ...,
-    params: {model: "GPT-4", temperature: 0.7},
+    type: "IMAGE_BG_REMOVE" | "OCR" | ...,
+    params: {model: "rembg", threshold: 0.5},
     position: {x,y},
   }],
   annotations: [ExcalidrawElement[]], // SVG paths/texts/shapes
   files: {input: File, output: Blob},
 }
-
 ## 6. User Interface Design Principles
 
 **Guiding Philosophy:** "Simple enough for a coffee shop owner, powerful enough for a startup CTO"
