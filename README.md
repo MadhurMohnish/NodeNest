@@ -43,8 +43,6 @@ Workflow = {
   files: {input: File, output: Blob},
 }
 
-# AI Automation Tool: Development Plan
-
 ## 6. User Interface Design Principles
 
 **Guiding Philosophy:** "Simple enough for a coffee shop owner, powerful enough for a startup CTO"
