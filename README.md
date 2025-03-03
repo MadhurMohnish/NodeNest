@@ -31,7 +31,7 @@
 | **PDF Processing** | PDF.js (client-side) | Avoid server costs |
 
 ## 5. Data Model (Conceptual)  
-```javascript
+javascript
 Workflow = {
   id: string,
   tasks: [{
@@ -42,6 +42,7 @@ Workflow = {
   annotations: [ExcalidrawElement[]], // SVG paths/texts/shapes
   files: {input: File, output: Blob},
 }
+
 ## 6. User Interface Design Principles
 
 **Guiding Philosophy:** "Simple enough for a coffee shop owner, powerful enough for a startup CTO"
